@@ -78,6 +78,7 @@ public class AliPayServiceImpl implements IAliPayService {
 		logger.info("订单号：{}生成支付宝支付码",product.getOutTradeNo());
 		String  message = SUCCESS;
 		//二维码存放路径
+
 		System.out.println(Constants.QRCODE_PATH);
 		String imgPath= Constants.QRCODE_PATH+Constants.SF_FILE_SEPARATOR+product.getOutTradeNo()+".png";
 		String outTradeNo = product.getOutTradeNo();
